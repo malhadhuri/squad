@@ -4,8 +4,7 @@ This file is part of PSFree.
 
 PSFree is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
-published by the Free Software Foundation, either version 3 of the
-License, or (at your option) any later version.
+published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
 PSFree is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -33,8 +32,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             }
         </style>
         <script>
-        if (window.applicationCache.status=='0')
-        {
+        if (window.applicationCache.status=='0') {
           window.location.replace("cache.html");
         }
         </script>
@@ -47,6 +45,27 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         source code and license.<br>
         <pre id='console'></pre>
     </body>
+    <!-- تحميل payload.js -->
     <script src="./payload.js"></script>
+
+    <!-- إضافة السكربت لإعادة الخلفية بعد تفعيل GoldHEN -->
+    <script>
+        window.onload = function() {
+            document.body.style.backgroundImage = "url('squad.jpg')";
+            document.body.style.backgroundSize = "cover";
+            document.body.style.backgroundPosition = "center";
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundColor = "black";
+        };
+
+        window.addEventListener('load', function() {
+            document.body.style.backgroundImage = "url('squad.jpg')";
+            document.body.style.backgroundSize = "cover";
+            document.body.style.backgroundPosition = "center";
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundColor = "black";
+        });
+    </script>
+
     <script type='module' src='./alert.mjs'></script>
 </html>
