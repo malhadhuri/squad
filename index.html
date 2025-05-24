@@ -45,12 +45,14 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         source code and license.<br>
         <pre id='console'></pre>
     </body>
+
     <!-- تحميل payload.js -->
     <script src="./payload.js"></script>
 
     <!-- إضافة السكربت لإعادة الخلفية بعد تفعيل GoldHEN -->
     <script>
         window.onload = function() {
+            // إعادة تطبيق الخلفية عند تحميل الصفحة
             document.body.style.backgroundImage = "url('squad.jpg')";
             document.body.style.backgroundSize = "cover";
             document.body.style.backgroundPosition = "center";
@@ -58,14 +60,26 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             document.body.style.backgroundColor = "black";
         };
 
+        // إضافة event listener لإعادة الخلفية بعد تفعيل GoldHEN
         window.addEventListener('load', function() {
+            // التأكد من تطبيق الخلفية
             document.body.style.backgroundImage = "url('squad.jpg')";
             document.body.style.backgroundSize = "cover";
             document.body.style.backgroundPosition = "center";
             document.body.style.backgroundRepeat = "no-repeat";
             document.body.style.backgroundColor = "black";
         });
+
+        // ملاحظة: قد تحتاج لإعادة الخلفية بشكل يدوي في حال تم تفعيل GoldHEN وظهور تغييرات كبيرة في الصفحة
+        setInterval(function() {
+            document.body.style.backgroundImage = "url('squad.jpg')";
+            document.body.style.backgroundSize = "cover";
+            document.body.style.backgroundPosition = "center";
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundColor = "black";
+        }, 1000); // كل ثانية سيتم التأكد من بقاء الخلفية
     </script>
 
     <script type='module' src='./alert.mjs'></script>
 </html>
+
