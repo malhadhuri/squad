@@ -1,20 +1,12 @@
 <html manifest="psfree_lapse.cache">
 <head>
 <title>PSFree-Lapse Exploit For PS4 9.00</title>
-<link rel="shortcut icon" href="favicon.ico"></link>
+<link rel="shortcut icon" href="favicon.ico">
+
+<!-- ربط ملف CSS الخلفية الموحد -->
+<link rel="stylesheet" href="background.css">
+
 <style>
-body {
-    background-image: url("squad.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: white;
-    color: black;
-    font-size: 20px;
-    text-align: center;
-    margin: 0;
-    overflow: hidden;
-}
 .info {
     overflow: hidden;
     position: fixed;
@@ -27,6 +19,7 @@ body {
     transform: translate(-50%, -50%);
 }
 </style>
+
 <script>
 history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));msgs.innerHTML="Installing Offline Cache ... " + Percent + "%"};
@@ -40,6 +33,4 @@ window.applicationCache.addEventListener("progress",DLProgress,false);window.app
 <body style=overflow:hidden>
 <div id=msgs class=info style='-webkit-font-feature-settings:"tnum";font-feature-settings:"tnum";'></div>
 </body>
-</html>
-
 </html>
